@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>copy</title>
+
+</head>
+<body>
+    <h1 id="copy-button">555</h1>
+    <input type="text" value="copy" >
+    <!-- <input type="text" value="happy" > -->
+    <button onclick="copyBox()">copy</button>
+<script >
+     function copyBox(){
+      let copyText =  document.getElementById('copy-button').innerText
+    //   console.log(copyText)
+        alert('hi')
+        copyText.select()
+        navigator.clipboard.writeText(copyText.innerText)
+    //     .then(() => alert("Copied: " + text))
+    //   .catch(err => console.log("Error:", err));
+     }
+</script>
+</body>
+</html>

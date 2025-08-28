@@ -84,20 +84,46 @@ getElement('service-box').addEventListener('click', function (e) {
 
 
 getElement('service-box').addEventListener('click', function (e) {
+    // const check = e.target.className.includes('copy-button')
+    // console.log(check)
     if (e.target.className.includes('copy-button')) {
         const copyButton = e.target
-        const serviceNumber = copyButton.parentNode.parentNode.children[3].innerText
-        alert('নাম্বার কপি '+serviceNumber)
+        let serviceNumber = copyButton.parentNode.parentNode.children[3].innerText
+        // console.log(serviceNumber)
+
+            // let text = document.getElementById("national-number").innerText;
+
+    let tempInput = document.createElement("textarea");
+    // console.log(tempInput)
+    tempInput.value = serviceNumber;
+    document.body.appendChild(tempInput);
+    // console.log(check);
+
+    tempInput.select();
+    document.execCommand("copy"); 
+    document.body.removeChild(tempInput);
+    alert("নাম্বার কপি " + serviceNumber);
+
+
+
+        // alert('নাম্বার কপি '+serviceNumber)
         const copyCount = getElement('copy-count').innerText
     const currentCopyCount = Number(copyCount) + 1
     getElement('copy-count').innerText = currentCopyCount
     console.log(currentCopyCount)
       
+     
+
 
     }
+     
 
 }
 )
+
+
+
+
 
 //  function copyColor() {
 //             let copyBox = document.getElementById("national-number");
