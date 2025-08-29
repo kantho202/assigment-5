@@ -14,8 +14,11 @@ Ans :getElementById is a specific one element.its strong a code.
 2. How do you **create and insert a new element into the DOM**?
 
 Ans : document.createElement() 
+
 3. What is **Event Bubbling** and how does it work?
+
 Ans : it has to work child , parent , grandfather, document step by step work.
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
 Ans : Event Delegation like a tree.We can use parentNode,children,etc .It's very useful for javascript.It's useful because 
