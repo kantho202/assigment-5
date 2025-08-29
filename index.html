@@ -10,31 +10,36 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- font awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="hind-madurai-light">
   <header>
     <!-- nav -->
-    <div class="flex justify-between items-center ml-[60px] mr-[60px] my-[25px] ">
+    <div class="lg:flex justify-between items-center lg:ml-[60px] lg:mr-[60px] my-[25px] ">
       <div class="flex justify-center items-center">
         <img src="assets/logo.png" width="50px" alt="">
-        <h1 class="text-[#006747] ml-[10px] font-bold text-2xl ">Emergency <br> Service</h1>
+        <h1 class="text-[#006747] ml-[10px] font-bold lg:text-2xl sm:text-base">Emergency <br> Service</h1>
 
       </div>
       <div class="flex gap-5">
-        <button  class="btn py-[15px] px-7 rounded-[50px] font-bold text-black bg-[#41ff6b1a]"><span id="heart-count" class="mr-1 inter-font">0</span>
+        <button class="btn py-[15px] px-7 rounded-[50px] font-bold text-black bg-[#41ff6b1a]"><span id="heart-count"
+            class="mr-1 inter-font">0</span>
 
           <img src="assets/heart.png" width="30px" alt="">
 
         </button>
-        <button id="" class="btn py-[15px] px-7 rounded-[50px] font-bold text-black bg-[#41ff6b1a]"><span id="coin-button" class="mr-1 inter-font">100</span>
+        <button id="" class="btn py-[15px] px-7 rounded-[50px] font-bold text-black bg-[#41ff6b1a]"><span
+            id="coin-button" class="mr-1 inter-font">100</span>
 
           <img src="assets/coin.png" width="30px" alt="">
 
         </button>
-        <button class="btn py-[15px] px-7 rounded-[50px] font-bold text-white bg-[#00A63E] "><span id="copy-count" class="mr-1 inter-font">0</span>
+        <button class="btn py-[15px] px-7 rounded-[50px] font-bold text-white bg-[#00A63E] "><span id="copy-count"
+            class="mr-1 inter-font">0</span>
 
           Copy
         </button>
@@ -54,125 +59,162 @@
   <!-- bg-[#E8F5E4] -->
   <main class="bg-[#f5fff6] pt-[48px] pb-[86px] ">
     <!-- service box -->
-    <section id="" class="w-11/12 mx-auto  grid grid-cols-12 gap-5 ">
-      <section id="service-box" class=" col-span-9 ">
-        <div class="grid grid-cols-3 gap-[20px]  ">
+    <section id="" class="w-11/12 mx-auto  lg:grid lg:grid-cols-12 gap-5 ">
+      <section id="service-box" class=" lg:col-span-9 ">
+        <div class="grid lg:grid-cols-3 gap-[20px]  ">
           <!-- service-1 -->
           <div class="p-8 bg-white shadow-[0_2px_3px_rgba(0, 2, 3, 15)] rounded-xl">
             <div class="flex justify-between items-center">
               <img src="assets/emergency.png" width="28px" alt="">
-             <i id="heart" class=" heart-icon fa-regular fa-heart text-2xl cursor-pointer"></i>
+              <i id="heart" class=" heart-icon fa-regular fa-heart text-2xl cursor-pointer"></i>
             </div>
-            <h1 class="font-bold text-[20px] mt-4">জাতীয় জরুরি সেবা</h1>
-            <p id="national-emergency" class="text-[#5C5C5C] text-[18px] font-normal">National Emergency</p>
-            <h1  id="national-number" class="font-bold text-[26px] mt-6">999</h1>
-            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mt-6 mb-">সার্বজনীন</p>
+            
+              <h1 class="font-bold text-[20px] mt-4">জাতীয় জরুরি সেবা</h1>
+              <p id="national-emergency" class="text-[#5C5C5C] text-[18px] font-normal">National Emergency</p>
+            
+            
+              <h1 id="national-number" class="font-bold text-[26px] mt-5">999</h1>
+              <p class="text-[#5C5C5C] text-[15px] font-normal ml-3  mb-5">সার্বজনীন</p>
+            
 
-            <div class="grid grid-cols-2 gap-2 mt-6">
-              <button  id="copy-button-1" class="copy-button btn  p w-full text-[#5C5C5C] rounded-lg font-normal hover:bg-gray-900 hover:text-white"> <i class="fa-regular fa-copy"></i> Copy </button>
-              <button id="call-button-1" class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="grid grid-cols-2 gap-2 ">
+              <button id="copy-button-1"
+                class="copy-button btn  p w-full text-[#5C5C5C] rounded-lg font-normal hover:bg-gray-900 hover:text-white">
+                <i class="fa-regular fa-copy"></i> Copy </button>
+              <button id="call-button-1"
+                class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i
+                  class="fa-solid fa-phone"></i> Call</button>
             </div>
 
           </div>
+
+
+
+
+          
           <!-- service-2 -->
           <div class=" p-8 bg-white rounded-xl ">
-           <div class="flex justify-between items-center">
-             <img src="assets/police.png" width="28px" alt="">
-             <i class="heart-icon fa-regular fa-heart text-2xl cursor-pointer"></i>
-           </div>
+            <div class="flex justify-between items-center">
+              <img src="assets/police.png" width="28px" alt="">
+              <i class="heart-icon fa-regular fa-heart text-2xl cursor-pointer"></i>
+            </div>
             <h1 class="font-bold text-[20px] mt-4">পুলিশ</h1>
             <p class="text-[#5C5C5C] text-[18px] font-normal">Police</p>
-            <h1 class="font-bold text-[26px] mt-6">999</h1>
-            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mt-6">পুলিশ</p>
+            <h1 class="font-bold text-[26px] mt-5">999</h1>
+            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mb-5">পুলিশ</p>
 
-            <div class="grid grid-cols-2 gap-2 mt-6">
-              <button id="copy-button-2" class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button id="call-button-2" class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="grid grid-cols-2 gap-2 mt-">
+              <button id="copy-button-2"
+                class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white"><i
+                  class="fa-regular fa-copy"></i> Copy</button>
+              <button id="call-button-2"
+                class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i
+                  class="fa-solid fa-phone"></i> Call</button>
             </div>
 
           </div>
           <!-- service-3 -->
           <div class="p-8 bg-white rounded-xl">
             <div class="flex justify-between items-center">
-              <img src="assets/fire-service.png" width="28px" alt=""> 
+              <img src="assets/fire-service.png" width="28px" alt="">
               <i class="heart-icon fa-regular fa-heart text-2xl cursor-pointer"></i>
             </div>
             <h1 class="font-bold text-[20px] mt-4">ফায়ার সার্ভিস</h1>
             <p class="text-[#5C5C5C] text-[14px] font-normal">Fire Service</p>
-            <h1 class="font-bold text-[26px] mt-6">999</h1>
-            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mt-6">ফায়ার সার্ভিস</p>
+            <h1 class="font-bold text-[26px] mt-5">999</h1>
+            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mb-5">ফায়ার সার্ভিস</p>
 
-            <div class="grid grid-cols-2 gap-2 mt-6">
-              <button id="copy-button-3" class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
-              <button id="call-button-3" class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="grid grid-cols-2 gap-2 ">
+              <button id="copy-button-3"
+                class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white">
+                <i class="fa-regular fa-copy"></i> Copy</button>
+              <button id="call-button-3"
+                class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i
+                  class="fa-solid fa-phone"></i> Call</button>
             </div>
 
           </div>
           <!-- service-4 -->
           <div class="p-8 bg-white rounded-xl">
             <div class="flex justify-between items-center">
-              <img src="assets/ambulance.png" width="28px" alt=""> 
+              <img src="assets/ambulance.png" width="28px" alt="">
               <i class="heart-icon fa-regular fa-heart text-2xl cursor-pointer"></i>
             </div>
             <h1 class="font-bold text-[20px] mt-4">অ্যাম্বুলেন্স</h1>
             <p class="text-[#5C5C5C] text-[14px] font-normal">Ambulance</p>
-            <h1 class="font-bold text-[26px] mt-6">1994-999999</h1>
-            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mt-6">স্বাস্থ্য</p>
+            <h1 class="font-bold text-[26px] mt-5">1994-999999</h1>
+            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mb-5">স্বাস্থ্য</p>
 
-            <div class="grid grid-cols-2 gap-2 mt-6">
-              <button id="copy-button-3" class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
-              <button id="call-button-3" class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="grid grid-cols-2 gap-2 ">
+              <button id="copy-button-3"
+                class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white">
+                <i class="fa-regular fa-copy"></i> Copy</button>
+              <button id="call-button-3"
+                class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i
+                  class="fa-solid fa-phone"></i> Call</button>
             </div>
 
           </div>
           <!-- service-5 -->
           <div class="p-8 bg-white rounded-xl">
             <div class="flex justify-between items-center">
-              <img src="assets/fire-service.png" width="28px" alt=""> 
+              <img src="assets/fire-service.png" width="28px" alt="">
               <i class="heart-icon fa-regular fa-heart text-2xl cursor-pointer"></i>
             </div>
             <h1 class="font-bold text-[20px] mt-4">নারী ও শিশু সহায়তা</h1>
             <p class="text-[#5C5C5C] text-[14px] font-normal">Women & Child Helpline</p>
-            <h1 class="font-bold text-[26px] mt-6">109</h1>
-            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mt-6">সহায়তা</p>
+            <h1 class="font-bold text-[26px] mt-5">109</h1>
+            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mb-5">সহায়তা</p>
 
-            <div class="grid grid-cols-2 gap-2 mt-6">
-              <button id="copy-button-3" class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
-              <button id="call-button-3" class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="grid grid-cols-2 gap-2 ">
+              <button id="copy-button-3"
+                class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white">
+                <i class="fa-regular fa-copy"></i> Copy</button>
+              <button id="call-button-3"
+                class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i
+                  class="fa-solid fa-phone"></i> Call</button>
             </div>
 
           </div>
           <!-- service-6 -->
           <div class="p-8 bg-white rounded-xl">
             <div class="flex justify-between items-center">
-              <img src="assets/fire-service.png" width="28px" alt=""> 
+              <img src="assets/fire-service.png" width="28px" alt="">
               <i class="heart-icon fa-regular fa-heart text-2xl cursor-pointer"></i>
             </div>
-            <h1 class="font-bold text-[20px] mt-4">ফায়ার সার্ভিস</h1>
-            <p class="text-[#5C5C5C] text-[14px] font-normal">Fire Service</p>
-            <h1 class="font-bold text-[26px] mt-6">999</h1>
-            <p class="text-[#5C5C5C] text-[15px] font-normal ml-3 mt-6">ফায়ার সার্ভিস</p>
+            <h1 class="font-bold text-[20px] mt-4">দুদক</h1>
+            <p class="text-[#5C5C5C] text-[14px] font-normal">Anti-Corruption</p>
+            <h1 class="font-bold text-[26px] mt-5">106</h1>
+            <p
+              class=" text-[#5C5C5C] text-[15px] font-normal  ml-3 mb-5    rounded-[50px]  ">
+              সরকারি</p>
 
-            <div class="grid grid-cols-2 gap-2 mt-6">
-              <button id="copy-button-3" class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
-              <button id="call-button-3" class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone"></i> Call</button>
+            <div class="grid grid-cols-2 gap-2 ">
+              <button id="copy-button-3"
+                class="copy-button btn p w-full text-[#5C5C5C] rounded-lg font-normal  hover:bg-gray-900 hover:text-white">
+                <i class="fa-regular fa-copy"></i> Copy</button>
+              <button id="call-button-3"
+                class="call-button btn w-full text-[#FFFFFF] bg-[#00A63E] rounded-lg font-normal  hover:bg-gray-300 hover:text-white"><i
+                  class="fa-solid fa-phone"></i> Call</button>
             </div>
 
           </div>
-        
+
 
 
         </div>
       </section>
 
 
-      <aside class="bg-white col-span-3  p-6">
+      <aside class="bg-white lg:col-span-3  p-6">
         <div class="flex justify-between items-center">
           <h1 class="font-medium text-[17px] text-[#111111]"><i class="fa-regular fa-clock"></i> Call History</h1>
-        <button id="clear-button" class="btn py-[15px] px-7 rounded-[50px] font-bold text-white bg-[#00A63E]  hover:bg-gray-300 hover:text-white"><span class="mr-1 text-[15px] ">Clear</span></button>
+          <button id="clear-button"
+            class="btn py-[15px] px-7 rounded-[50px] font-bold text-white bg-[#00A63E]  hover:bg-gray-300 hover:text-white"><span
+              class="mr-1 text-[15px] ">Clear</span></button>
         </div>
-        <div id="call-history" >
-         
+        <div id="call-history">
+
         </div>
       </aside>
     </section>
@@ -183,11 +225,11 @@
 
 
 
-  
+
 
   <footer></footer>
 
-<script src="javascript/first.js"></script>
+  <script src="javascript/first.js"></script>
 </body>
 
 </html>
